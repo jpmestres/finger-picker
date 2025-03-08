@@ -1,0 +1,117 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.background-image {
+  background-image: url('./assets/hand.png');
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 475px;
+  height: 475px;
+  background-size: contain;
+background-repeat: no-repeat;
+}
+
+.background-image img{
+  max-width: 100%;
+}
+
+.pick-button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+body {
+  background-color: #ECECE9;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle1 {
+  transform: translate(-50%, -50%);
+  bottom: 81%;
+  left: 8.5%;
+}
+
+.circle2 {
+  bottom: 87%;
+  left: 31%;
+  transform: translate(-50%, -50%);
+}
+
+.circle3 {
+  bottom: 84%;
+  left: 36.5%;
+  transform: translate(50%, -50%);
+}
+
+.circle4 {
+  bottom: 78%;
+  left: 41%;
+  transform: translate(-50%, 50%);
+}
+
+.circle5 {
+  bottom: 64%;
+  left: 34%;
+  transform: translate(50%, 50%);
+}
+
+.circle.selected {
+  background-color: red;
+}
+
+button {
+  background-color: #623162;
+  color: white;
+}
